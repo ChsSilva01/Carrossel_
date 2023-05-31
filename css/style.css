@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    padding: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.galery-wrapper{
+    overflow-x: auto;
+}
+.gallery{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.item{
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: all 600ms ease-in-out;
+}
+.current-item{
+    opacity: 1;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.galery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .galery-wrapper{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+p{
+    padding-bottom: 5vh;
+    text-align: center;
+}
+.a{
+    position: absolute;
+    left: 10vw;
+}
+.b{
+    position: absolute;
+    right: 10vw;
+}
